@@ -1,0 +1,395 @@
+/* Reset CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+1. Vi tri 
+2. Kich thuoc
+3. Mau sac
+4. Kieu dang
+*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position:fixed;
+
+}
+/* Common */
+.text-white {
+    color: #fff !important;
+}
+.mt {
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full {
+    width: 100%;
+}
+.col-third {
+    width:33.33%
+}
+.col-half {
+    width: 50%;
+}
+.text-center {
+    text-align: center !important;
+}
+.pull-right {
+    float:right;
+}
+
+
+/* end Common */
+#nav li{
+    display: inline-block;
+    position: relative;
+
+
+}
+#nav .nav-arrow-down{
+    font-size: 16px;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover >a,
+#nav .subnav li:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+#nav, .subnav {
+    list-style: none;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,  0, 0, 0.3);
+    display: none;
+}
+#nav .subnav li {
+    width: 100%
+
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav {
+    display: inline-block;
+}
+#header .search-btn {
+    float: right;
+    cursor: pointer;
+    padding: 0 21px;
+}
+#header .search-btn:hover {
+    background-color: rgb(255, 73, 73);
+}
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    line-height: 46px;
+}
+
+/* begin SLIDER */
+#sliders {
+    margin: top 46px;
+    padding-top: 50%;
+    background: url('/w3_band/assets/img/slider/slider-1.jpg') top center / cover no-repeat;
+    position: relative;
+}
+/* end SLIDER */
+#sliders .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: rgb(243, 247, 241);
+    width: 100%;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+
+}
+
+#sliders .text-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 25px;
+}
+
+#sliders .text-description {
+    font-size: 15px;
+}
+
+/* begin CONTENT */
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.7;
+
+}
+
+#content .about-text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+#content .member-list {
+    margin-top: 48px;
+    display: flex;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img   {
+    margin-top: 8px;
+    width: 100%;
+}
+/* Tour */
+.tour-section {
+    background-color: #000;
+    min-height: 810px;
+}
+.tickets-list {
+    margin-top: 40px;
+    background-color:#fff;
+    list-style: none;
+}
+.tickets-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+}
+
+.tickets-list .sold-out {
+    background-color:#f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quanlity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color:#000;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -3px;
+}
+/* Place */
+.clear {
+
+}
+.place-list {
+    margin-top: 32px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+.place-img:hover {
+    opacity: 0.8;
+}
+
+.place-body {
+    background-color:#fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size:15px;
+
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4rem;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    margin-top: 15px;
+    display: inline-block;
+    border: none;
+}
+.btn:hover {
+    color: #000;
+    background-color:#ccc;
+    cursor: pointer;
+}
+
+.contact-content {
+    margin-top: 48px;
+    line-height:1.5
+}
+.contact-info   {
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact-info i {
+    width: 30px;
+    font-weight: 600;
+    display: inline-block;
+}
+.contact-form {
+    font-size: 15px;
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+
+}
+.map-img {
+    width:100%;
+}
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+.footer .socials-list {
+    font-size: 24px;
+}
+.footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+.footer .coppyright a,
+.footer .socials-list a:hover  {
+    color: rgba(0, 0, 0, 0.4);
+
+}
+.footer .coppyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.footer .coppyright a{
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.space  {
+    height: 300px;
+}
+.slider {
+    width: 60%;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+.slider__imgs {
+    display: flex;
+}
+.slider__imgs img {
+    width: 100%;
+}
+.slider__imgs input {
+    display: none;
+}
+.labelslider {
+    display: flex;
+    justify-content: center;
+}
+.labelslider label {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 2px;
+    border: 1.0999999999999996px solid #fe9393;
+}
+.labelslider label:hover {
+    background-color: rgb(214, 221, 214);
+}
+#img2:checked ~ .imgslider2 {
+    margin-left: -200%;
+}
+#img3:checked ~ .imgslider3 {
+    margin-left: -300%;
+}
+#img4:checked ~ .imgslider4 {
+    margin-left: -400%;
+}
